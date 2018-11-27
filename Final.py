@@ -33,32 +33,6 @@ Out[8]: 0.006339622641509434
   
 #user input to modify equation to begin tests
 
-#cells who do not live have increased hydrogen production equation for hydrogen
-	if fa >= 0.8:
-	return{ number*2 }
-#this is a rough draft
-	else
-	 fa <= 0.3:
-
-
-        kH = 0.00025
-        pG = pG
-        Vo =0.012
-        fo = fo 
-
-        return fH = kH * 5.8 * pG * ( Vo + fo )
-class cell:
-    def __init__(self, number, ATPfa, cellpH, generation):
-       	self.number = number
-	self.ATPfa = ATPfa
-	self.cellpH = cellpH
-	self.generation = generation
-	#number of cells
-        #threshhold for death of cells
-        #threshhold for reproduction(cell number of surviving cells double)
-        #if ATP 
-Living = cell("GenOne", > = 0.8, 6.1, 2)
-Duplicating = cell("GenOne" 
 #class glycolytic pathway:
 class glycolytic:
     def __init__(self,Oxygencon,Glucosecon,Protonprd,ATPprodc):
@@ -68,11 +42,13 @@ class glycolytic:
 	sel.ATPprodc = ATPprodc
 
 
- #equation for oxygen co
+ #equation for oxygen con
                    
  master
         #equation for gluco con
-pG=1
+import numpy as np
+
+pG = np.linspace(0, 1, 100)
 Ao=0.1
 G=5
 Kg=0.04
@@ -96,8 +72,54 @@ def __init__(self,number,generations):
  master
         #equation for Oxygencon
         #equation for glucose
-        #equation for proton prd
         #equation for ATP prd
+#equation for proton prd
+  if fa >= 0.8:
+        return{ number*2 }
+#this is a rough draft
+        else
+         fa <= 0.3:
+
+
+        kH = 0.00025
+        pG = pG
+        Vo =0.012
+        fo = fo 
+
+        return fH = kH * 5.8 * pG * ( Vo + fo )
+class cell:
+    def __init__(self, number, ATPfa, cellpH, generation):
+        self.number = number
+        self.ATPfa = ATPfa
+        self.cellpH = cellpH
+        self.generation = generation
+        #number of cells
+        #threshhold for death of cells
+        #threshhold for reproduction(cell number of surviving cells double)
+class cell:
+    def __init__(self, number, ATPfa, cellpH, generation):
+        self.number = number
+        self.ATPfa = ATPfa
+        self.cellpH = cellpH
+        self.generation = generation
+        #number of cells
+        #threshhold for death of cells
+        #threshhold for reproduction(cell number of surviving cells double)
+        #if ATP 
+Living = cell("GenOne", > = 0.8, 6.1, 2)
+Duplicating = cell("GenOne" 
+
+import matplotlib.pyplot as plt
+
+x = ['pG']
+y = ['fH']
+plt.scatter(pG, Hydrogen_Prod, label='No of hydrogens produced', color='c', marker='^')
+
+plt.xlabel('pG') 
+plt.ylabel('Hydrogen_Prod')
+plt.title('H vs pG')
+plt.legend()
+plt.show()
 master
     
 master
