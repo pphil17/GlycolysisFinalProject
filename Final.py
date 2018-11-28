@@ -74,8 +74,12 @@ def __init__(self,number,generations):
         #equation for glucose
         #equation for ATP prd
 #equation for proton prd
-  if fa >= 0.8:
-        return{ number*2 }
+for fa in falist
+       if fa >b= 0.8:
+       List= array[fa]
+	test>0.8
+       List[test>0.8] = 0
+falist.append(
 #this is a rough draft
         else
          fa <= 0.3:
@@ -87,6 +91,7 @@ def __init__(self,number,generations):
         fo = fo 
 
         return fH = kH * 5.8 * pG * ( Vo + fo )
+	fH.append(fHz)
 class cell:
     def __init__(self, number, ATPfa, cellpH, generation):
         self.number = number
@@ -110,10 +115,11 @@ Living = cell("GenOne", > = 0.8, 6.1, 2)
 Duplicating = cell("GenOne" 
 
 import matplotlib.pyplot as plt
+#exampleask  tomorrow
 
-x = ['pG']
-y = ['fH']
-plt.scatter(pG, Hydrogen_Prod, label='No of hydrogens produced', color='c', marker='^')
+x = [2,4,6,8,10]
+y = [1,2,4,7,4]
+plt.scatter(x, y, label='No of hydrogens produced', color='c', marker='^')
 
 plt.xlabel('pG') 
 plt.ylabel('Hydrogen_Prod')
