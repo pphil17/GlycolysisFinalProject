@@ -48,11 +48,11 @@ class glycolytic:
         #equation for gluco con
 import numpy as np
 #pG is the variable for glucose intake within a cell. This value is used in the equation Fg to find ... that can later be used to control amount of ATp and Hydrogen produced that we will see in later equations
-#our numpy list  is written to give off a list of 100 generations of numbers ranging from 0 to 1
+#our numpy list  is written to give off a list of 100 generations of numbers ranging from 0 to 100
 # for a healthy cell a value of 1  glucose intake yields a healthy amount of ATp production and no hydrogen production allowing the  cell to simply reproduce
-#for our cancer cells since we are getting values between 0 and 1 our cells will act as cancerous yielding an unhealthy amount of ATP and thus overproduction of hydrogen killing the cells
- 
-pG=np.linspace(0, 1, 100)
+#for our cancer cells since we are getting values greater than 1  our cells will act as cancerous yielding an unhealthy amount of ATP and thus overproduction of hydrogen killing the cells
+
+pG=np.linspace(start=0, stop= 100, num=100)
 Ao=0.1
 G=5
 Kg=0.04
