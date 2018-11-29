@@ -95,8 +95,11 @@ def __init__(self,number,generations):
     #def __init__(self,Oxygencon,Glucoseconc,prtonprd,atpprodcn)
  master
         #equation for Oxygencon
+#Fo for aerobic pathway will be higher than Fo for glycolysis
         #equation for glucose
         #equation for ATP prd
+#ATP prd will be higher
+
 #Proton production, Fh, is linked to the amount of glycolysis that does not feed the aerobic pathway
 #equation for proton prd
   if fa >= 0.8:
